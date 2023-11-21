@@ -1,0 +1,137 @@
+@media (max-width: 480px) {
+  html {
+    font-size: calc(100vw / 31.25) !important;
+  }
+  .main {
+    flex-direction: column;
+
+    .left {
+      width: 100vw;
+      height: 50vh;
+      justify-content: center;
+      &__wrapper {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15%;
+      }
+
+      &__logo {
+        justify-content: center;
+
+        img:nth-child(1) {
+          width: 2.83rem;
+        }
+        img:nth-child(2) {
+          width: 8.16rem;
+        }
+      }
+
+      &__description div {
+        width: 90%;
+        margin: auto;
+      }
+
+      &__description-thin,
+      &__description-gold {
+        font-size: 2rem;
+        line-height: 2.29rem;
+        font-weight: 400;
+      }
+
+      &__description-blur {
+        font-size: 1.33rem;
+        line-height: 2.13rem;
+        font-weight: 400;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+      }
+
+      &__button button {
+        font-size: 1.13rem;
+        font-weight: 600;
+        line-height: 2.13rem;
+      }
+    }
+    .ballon {
+      width: 48vw;
+      right: -17%;
+      top: 57%;
+    }
+    .light_2 {
+      top: 7%;
+      left: 82%;
+      width: 20vw;
+    }
+    .brilliant_2 {
+      top: 38%;
+      left: 3%;
+      width: 28vw;
+    }
+
+    .light_1 {
+      bottom: 53%;
+      top: unset;
+      left: 79%;
+      width: 22vw;
+    }
+    .brilliant_1 {
+      bottom: 51%;
+      top: unset;
+      left: 75%;
+      width: 14vw;
+    }
+    .candy {
+      top: 91%;
+      left: 1%;
+      width: 17vw;
+    }
+
+    .chip {
+      left: 1.7%;
+      width: 24vw;
+      top: 57%;
+    }
+
+    .right {
+      width: 100vw;
+      height: 50vh;
+      &__title {
+        width: 26vw;
+      }
+      &__girl {
+        width: 68.8vw;
+      }
+    }
+  }
+  .popup {
+    padding: 10px;
+
+    &__wrapper {
+      background-image: none;
+      margin: 0;
+    }
+
+    &__form {
+      height: calc(100vh - 320px);
+      top: 300px;
+      width: 100%;
+      right: 50%;
+      transform: translateX(50%);
+    }
+    .title-form {
+      margin-top: 0.33rem;
+      margin-bottom: 2rem;
+    }
+
+    .mobile {
+      margin: 0 auto;
+      display: block;
+      height: 300px;
+      width: 100%;
+      background: linear-gradient(180deg, #130625 0%, #471160 100%);
+    }
+  }
+}
