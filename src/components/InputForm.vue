@@ -43,7 +43,6 @@ export default {
 
     const validateInput = () => {
       const isValid = inputRef.value.checkValidity();
-      console.log(isValid);
       emit("valid", isValid);
     };
 

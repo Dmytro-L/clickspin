@@ -22,12 +22,14 @@ export default {
       type: Boolean,
     },
   },
-  setup(props) {
+  setup(props, {emit}) {
     const buttonText = ref("Create an account");
     const buttonSubmit = ref(null);
     const checkData = () => {
       if (!props.emptyData) {
         buttonSubmit.value.textContent = "Set something )";
+      } else {
+        emit("show-data");
       }
       setTimeout(() => {
         buttonSubmit.value.textContent = buttonText.value;

@@ -18,7 +18,7 @@
       <a class="link" href="#">Terms and Conditions.</a>
     </div>
   </div>
-  <ButtonSubmit :empty-data="emptyData" :is-disable="isValid" />
+  <ButtonSubmit @show-data="showData" :empty-data="emptyData" :is-disable="isValid" />
   <div class="social-block">
     <h4>Or register with:</h4>
     <div class="social-icons">
@@ -70,6 +70,10 @@ export default {
       return false;
     });
 
+    const showData = () => {
+      console.log(emailValue.value, "-" , nameValue.value)
+    }
+
     return {
       nameValue,
       emailValue,
@@ -78,6 +82,7 @@ export default {
       isValid,
       setInputValid,
       emptyData,
+      showData
     };
   },
 };
